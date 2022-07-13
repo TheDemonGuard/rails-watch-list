@@ -38,7 +38,7 @@ cloudinary:
   folder: <%= Rails.env %>
 
 # config/environments/development.rb
-config.active_storage.service = :cloudinary
+# config.active_storage.service = :cloudinary
 
 # config/environments/production.rb
-config.active_storage.service = :cloudinary
+# config.active_storage.service = :cloudinary

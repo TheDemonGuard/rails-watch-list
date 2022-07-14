@@ -1,7 +1,9 @@
 <h1>Display the list</h1>
 <ul>
   <% @lists.each do |list| %>
-  <li><%= link_to list.name, list_path(list) %>
+  <li>
+    <%= cl_image_tag list.photo.key, height: 300, width: 300, crop: :fill %>
+    <%= link_to list.name, list_path(list) %>
       | <%= link_to "Edit this list", edit_list_path(list) %>
       | <%= link_to "Delete #{list.name}",
             list_path(list),
